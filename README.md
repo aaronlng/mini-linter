@@ -1,2 +1,15 @@
-# mini-linter
-Mini Linter is the fourth project from Codecademy's Web Development Course Module 5: JavaScript: Arrays, Loops, and Objects
+# Mini Linter
+
+In this project, you will use what you know about iterating over arrays to improve the quality of a paragraph and gather some information about that paragraph.
+
+This is the same type of work that word processing software does. Additionally, you may have heard of linting, a process by which text is evaluated and improved by an application. In this project, you will create a miniature version of a linter using array methods that you have learned.
+
+> Project 4 in the Codecademy Web Development Course Module 5: JavaScript: Arrays, Loops, and Objects
+
+## Author
+
+### Aaron Long
+
+- [GitHub Profile](https://github.com/aaronlng/)
+
+- Twitter: [@aaronlng](https://twitter.com/aaronlng)
