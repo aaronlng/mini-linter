@@ -4,6 +4,55 @@ let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually'];
 
+//Step 1 Split the story into an array with individual words
+
 let storyWords = story.split(' ');
 
-console.log(storyWords.length);
+console.log('Number of words: ', storyWords.length);
+
+//Step 3 iterate over unnecessary words and create new array without them
+
+let betterWords = storyWords.filter(word => {
+    return !unnecessaryWords.includes(word);
+})
+
+// console.log(betterWords.length);
+
+//Step 4 count the times the overused words are used in the story
+
+let reallyCount = 0;
+let veryCount = 0;
+let basicallyCount = 0;
+
+for (word of storyWords) {
+    if (word === 'really') {
+        reallyCount += 1;
+    } else if (word === 'very') {
+        veryCount += 1;
+    } else if (word === 'basically') {
+        basicallyCount += 1;
+    }
+}
+
+console.log('Number of really: ' + reallyCount);
+console.log('Number of very: ' + veryCount);
+console.log('Number of basically: ' + basicallyCount);
+
+//Step 5 count how many sentences are in the paragraph
+
+let sentenceCount = 0;
+
+storyWords.forEach(word => {
+    if (word[word.length - 1] === '.' || word[word.length - 1] === '!') {
+        return sentenceCount += 1;
+    }
+});
+
+//Log the sentenceCount
+
+console.log('Number of sentences: ', sentenceCount);
+
+//Log the betterWords array as a single string
+
+console.log(betterWords.join(' '));
+
